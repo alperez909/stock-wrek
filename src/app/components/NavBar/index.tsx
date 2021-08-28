@@ -1,7 +1,6 @@
 import * as React from 'react';
-import styled from 'styled-components/macro';
+import styled, { CSSObject } from 'styled-components/macro';
 import { Logo } from './Logo';
-import { StyleConstants } from 'styles/StyleConstants';
 import { Nav } from './Nav';
 import { PageWrapper } from '../PageWrapper';
 
@@ -30,13 +29,13 @@ export function NavBar(props: Props) {
 
 const Wrapper = styled.header`
   box-shadow: 0 1px 0 0 ${p => p.theme.palette.divider};
-  height: ${StyleConstants.NAV_BAR_HEIGHT};
   display: flex;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: ${p => p.theme.palette.background.default};
   z-index: 9999;
+  ${p => ({ ...p.theme.mixins.toolbar } as CSSObject)};
 
   @supports (backdrop-filter: blur(10px)) {
     backdrop-filter: blur(10px);

@@ -40,18 +40,6 @@ export function StockSearch(props: Props) {
 
   const dispatch = useDispatch();
 
-  const useEffectOnMount = (effect: React.EffectCallback) => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    React.useEffect(effect, []);
-  };
-
-  useEffectOnMount(() => {
-    dispatch(actions.loadStocks());
-    dispatch(stockHistoricalDataActions.loadStockHistoricalData());
-    dispatch(stockInfoActions.loadStockInfo());
-    dispatch(stockNewsActions.loadStockNews());
-  });
-
   const _determineDefaultType = (query: string | null): StockType => {
     return query != null && query !== ''
       ? StockType.ALL

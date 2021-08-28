@@ -5,6 +5,7 @@ import MenuButton from '@material-ui/icons/Menu';
 import { messages } from './messages';
 import { useTranslation } from 'react-i18next';
 import { Tooltip } from '@material-ui/core';
+import Hidden from '@material-ui/core/Hidden';
 
 interface Props {
   onNavDrawerToggleClick?: () => void;
@@ -27,7 +28,9 @@ export function Logo(props: Props) {
         </MaterialIconButton>
       </Tooltip>
       <Title>Stock Wrek</Title>
-      <Description>The Final Frontier</Description>
+      <Hidden xsDown={true}>
+        <Description>The Final Frontier</Description>
+      </Hidden>
     </Wrapper>
   );
 }

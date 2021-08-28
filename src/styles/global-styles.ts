@@ -1,5 +1,27 @@
-import { createGlobalStyle } from 'styled-components';
-import { StyleConstants } from './StyleConstants';
+import { createGlobalStyle, CSSObject, CSSProperties } from 'styled-components';
+
+const renameMarginToPadding = (
+  toolbar: CSSProperties,
+  cssObject: CSSObject,
+): CSSObject => {
+  for (let property in toolbar) {
+    if (typeof toolbar[property] === 'object') {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      cssObject[property] = {};
+      renameMarginToPadding(
+        toolbar[property],
+        cssObject[property] as CSSObject,
+      );
+    } else if (property === 'minHeight') {
+      cssObject['paddingTop'] = toolbar[property];
+    } else {
+      cssObject[property] = toolbar[property];
+    }
+  }
+
+  return cssObject;
+};
+
 /* istanbul ignore next */
 export const GlobalStyle = createGlobalStyle`
   html,
@@ -11,8 +33,8 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    padding-top: ${StyleConstants.NAV_BAR_HEIGHT};
     background-color: ${p => p.theme.palette.background.paper};
+    ${p => renameMarginToPadding(p.theme.mixins.toolbar, {})};
   }
 
   body.fontLoaded {
