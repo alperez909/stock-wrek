@@ -2,22 +2,22 @@
   "files": {
     "static/js/0.a00ffb4b.chunk.js": "/stock-wrek/static/js/0.a00ffb4b.chunk.js",
     "main.js": "/stock-wrek/static/js/main.d9198015.chunk.js",
-    "runtime-main.js": "/stock-wrek/static/js/runtime-main.4b269614.js",
+    "runtime-main.js": "/stock-wrek/static/js/runtime-main.093fe22e.js",
     "static/css/3.e6924ae7.chunk.css": "/stock-wrek/static/css/3.e6924ae7.chunk.css",
-    "static/js/3.b3a67a48.chunk.js": "/stock-wrek/static/js/3.b3a67a48.chunk.js",
+    "static/js/3.c632aa7a.chunk.js": "/stock-wrek/static/js/3.c632aa7a.chunk.js",
     "static/js/4.a9e3939e.chunk.js": "/stock-wrek/static/js/4.a9e3939e.chunk.js",
     "static/js/5.d3e21fa8.chunk.js": "/stock-wrek/static/js/5.d3e21fa8.chunk.js",
-    "static/js/6.650557e0.chunk.js": "/stock-wrek/static/js/6.650557e0.chunk.js",
+    "static/js/6.f3d0d898.chunk.js": "/stock-wrek/static/js/6.f3d0d898.chunk.js",
     "static/js/7.1d973dcc.chunk.js": "/stock-wrek/static/js/7.1d973dcc.chunk.js",
     "index.html": "/stock-wrek/index.html",
     "static/js/0.a00ffb4b.chunk.js.LICENSE.txt": "/stock-wrek/static/js/0.a00ffb4b.chunk.js.LICENSE.txt",
-    "static/js/3.b3a67a48.chunk.js.LICENSE.txt": "/stock-wrek/static/js/3.b3a67a48.chunk.js.LICENSE.txt",
+    "static/js/3.c632aa7a.chunk.js.LICENSE.txt": "/stock-wrek/static/js/3.c632aa7a.chunk.js.LICENSE.txt",
     "static/js/4.a9e3939e.chunk.js.LICENSE.txt": "/stock-wrek/static/js/4.a9e3939e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4b269614.js",
+    "static/js/runtime-main.093fe22e.js",
     "static/css/3.e6924ae7.chunk.css",
-    "static/js/3.b3a67a48.chunk.js",
+    "static/js/3.c632aa7a.chunk.js",
     "static/js/main.d9198015.chunk.js"
   ]
 }
